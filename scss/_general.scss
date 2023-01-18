@@ -1,4 +1,98 @@
+@keyframes textAlpha{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.bg_light{
+    background-color: $mainColor;
+}
+#botonera{
+    margin-top: 20px;
+    img{
+        width: 100px;
+    }
+    ul li a{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2%;
+    transition: background-size .7s;
+    &:hover{
+        color: $secondaryColor;
+        font-weight: 600;
+        background-size: 100% 2px;
+    }
+    }
+}
 h1{
-    color: $mainColor;
+    font-size: $fontLg;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    animation: textAlpha;
+    animation-duration: 2s;
+}
+h2{
+    font-size: 2,5em;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main section div figure{
+    display: inline-block;
+    margin-left: 40px;
+    figcaption{
+        margin-left: 0px;
+    }
+    a{
+        color: $thirdColor;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            color: $thirdColor;
+        }
+    }
+    
+}
+#productos .galeria{
+    display: flex;
+    margin-top: 50px;
+    figure{
+        text-align: center;
+        margin: 20px;
+        margin-bottom: 50px;
+        img{
+            width: 250px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+    }
+}
+.justify-content{
+    justify-content: center;
+}
+.categoria{
+    margin-top: 60px;
     font-size: $fontXXL;
+}
+.categoria_imgniño{
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+.rounded{
+    background-color: $mainColor;
+    margin-bottom: 18px;
+}
+.logo_footer{
+    width: 70px;
+}
+.copyright,.list-unstyled {
+    margin-top: 18px;
+}
+footer div ul li a{
+    color: $thirdColor;
+}
+footer div div p a{
+    color: $thirdColor;
 }
